@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>lab1.Main</OriginalElement>
+  <nodes>
+    <node x="56.5" y="470.0">lab1.store.ProductStore</node>
+    <node x="128.62499999999997" y="679.0">lab1.test.TestApp</node>
+    <node x="170.29166666666669" y="0.0">lab1.model.Wood</node>
+    <node x="230.125" y="210.5">lab1.store.WoodDirectory</node>
+    <node x="50.125" y="199.0">lab1.model.Timber</node>
+    <node x="158.45833333333331" y="868.0">lab1.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="lab1.model.Wood" target="lab1.model.Wood">
+      <point x="-58.33333333333333" y="64.5" />
+      <point x="181.95833333333337" y="149.0" />
+      <point x="150.29166666666669" y="149.0" />
+      <point x="150.29166666666669" y="64.5" />
+      <point x="-70.0" y="-0.0" />
+    </edge>
+    <edge source="lab1.test.TestApp" target="lab1.test.TestApp">
+      <point x="-53.666666666666664" y="64.5" />
+      <point x="155.45833333333331" y="828.0" />
+      <point x="108.62499999999997" y="828.0" />
+      <point x="108.62499999999997" y="743.5" />
+      <point x="-80.5" y="-0.0" />
+    </edge>
+    <edge source="lab1.test.TestApp" target="lab1.store.ProductStore">
+      <point x="-13.416666666666657" y="-64.5" />
+      <point x="195.70833333333331" y="659.0" />
+      <point x="180.66666666666666" y="659.0" />
+      <point x="49.66666666666666" y="64.5" />
+    </edge>
+    <edge source="lab1.test.TestApp" target="lab1.model.Timber">
+      <point x="-67.08333333333331" y="-64.5" />
+      <point x="142.04166666666666" y="659.0" />
+      <point x="26.0" y="659.0" />
+      <point x="26.0" y="440.0" />
+      <point x="85.125" y="440.0" />
+      <point x="-35.0" y="100.5" />
+    </edge>
+    <edge source="lab1.store.ProductStore" target="lab1.store.ProductStore">
+      <point x="-49.66666666666666" y="64.5" />
+      <point x="81.33333333333334" y="619.0" />
+      <point x="36.5" y="619.0" />
+      <point x="36.5" y="534.5" />
+      <point x="-74.5" y="-0.0" />
+    </edge>
+    <edge source="lab1.store.WoodDirectory" target="lab1.model.Wood">
+      <point x="-55.66666666666666" y="-89.0" />
+      <point x="257.95833333333337" y="179.0" />
+      <point x="251.95833333333334" y="179.0" />
+      <point x="11.666666666666657" y="64.5" />
+    </edge>
+    <edge source="lab1.test.TestApp" target="lab1.store.WoodDirectory">
+      <point x="40.25" y="-64.5" />
+      <point x="249.37499999999997" y="649.0" />
+      <point x="329.9583333333333" y="649.0" />
+      <point x="329.9583333333333" y="450.0" />
+      <point x="313.625" y="450.0" />
+      <point x="0.0" y="89.0" />
+    </edge>
+    <edge source="lab1.store.WoodDirectory" target="lab1.store.WoodDirectory">
+      <point x="-55.666666666666664" y="89.0" />
+      <point x="257.9583333333333" y="408.5" />
+      <point x="210.125" y="408.5" />
+      <point x="210.125" y="299.5" />
+      <point x="-83.5" y="-0.0" />
+    </edge>
+    <edge source="lab1.Main" target="lab1.test.TestApp">
+      <point x="-38.75" y="-28.0" />
+      <point x="197.20833333333331" y="848.0" />
+      <point x="209.12499999999997" y="848.0" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="lab1.model.Timber" target="lab1.model.Timber">
+      <point x="-58.333333333333314" y="100.5" />
+      <point x="61.791666666666686" y="420.0" />
+      <point x="30.125" y="420.0" />
+      <point x="30.125" y="299.5" />
+      <point x="-70.0" y="-0.0" />
+    </edge>
+    <edge source="lab1.model.Timber" target="lab1.model.Wood">
+      <point x="-35.0" y="-100.5" />
+      <point x="85.125" y="169.0" />
+      <point x="205.29166666666669" y="169.0" />
+      <point x="-35.0" y="64.5" />
+    </edge>
+    <edge source="lab1.store.ProductStore" target="lab1.model.Timber">
+      <point x="-49.66666666666666" y="-64.5" />
+      <point x="81.33333333333334" y="450.0" />
+      <point x="108.45833333333333" y="450.0" />
+      <point x="-11.666666666666671" y="100.5" />
+    </edge>
+  </edges>
+  <settings layout="Balloon" zoom="0.7000000000000001" x="276.5714285714285" y="483.5714285714285" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
