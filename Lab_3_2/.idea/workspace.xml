@@ -90,6 +90,19 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunManager" selected="Application.TestByConsole">
+    <configuration name="TestApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab32.test.TestApp" />
+      <module name="Lab_3_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab32.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestByConsole" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab32.test.TestByConsole" />
       <module name="Lab_3_2" />
@@ -105,19 +118,6 @@
     </configuration>
     <configuration name="TestFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab32.test.TestFile" />
-      <module name="Lab_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab32.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMultiFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab32.test.TestMultiFile" />
       <module name="Lab_3_2" />
       <extension name="coverage">
         <pattern>
@@ -155,20 +155,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.TestFile" />
-      <item itemvalue="Application.TestMultiFile" />
       <item itemvalue="Application.TestStoreObject" />
       <item itemvalue="Application.TestRestoreObject" />
       <item itemvalue="Application.TestByConsole" />
+      <item itemvalue="Application.TestApp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestByConsole" />
-        <item itemvalue="Application.TestRestoreObject" />
+        <item itemvalue="Application.TestApp" />
         <item itemvalue="Application.TestStoreObject" />
         <item itemvalue="Application.TestFile" />
-        <item itemvalue="Application.TestMultiFile" />
+        <item itemvalue="Application.TestRestoreObject" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616352737479</updated>
       <workItem from="1616352738868" duration="11105000" />
-      <workItem from="1616368009873" duration="120000" />
+      <workItem from="1616368009873" duration="6664000" />
     </task>
     <servers />
   </component>
@@ -202,5 +215,20 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lab32/test/TestByConsole.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

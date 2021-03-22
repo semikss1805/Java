@@ -6,65 +6,81 @@ import lab32.store.WoodDirectory;
 
 import javax.swing.*;
 import java.io.*;
+import java.util.Date;
 import java.util.Scanner;
 
 public class TestByConsole {
     private WoodDirectory wd = new WoodDirectory();
     private ProductStore ps = new ProductStore();
     private Scanner in = new Scanner(System.in);
+    private BufferedWriter bw = new BufferedWriter(new FileWriter("Log.TXT"));
+
+    public TestByConsole() throws IOException {
+    }
+
+    private void writeString(String s) {
+        try {
+            bw.write((new Date()) + " " + s);
+            bw.newLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void startApp() {
+        name();
         while (true) {
             System.out.println("\n1. Додати деревину");
             System.out.println("2. Додати брус");
             System.out.println("3. Додати круглий брус");
             System.out.println("4. Додати мішок із залишками виробництва");
             System.out.println("5. Підрахувати загальну вагу");
-            System.out.println("6. Завершити роботу");
+            System.out.println("6. Зберегти");
+            System.out.println("7. Завантажити");
+            System.out.println("8. Експортувати до текстового документу");
+            System.out.println("9. Завершити роботу");
             Scanner in = new Scanner(System.in);
             int inputNum = in.nextInt();
 
             switch (inputNum) {
-                case 1:
-                    addWood();
-                    break;
-                case 2:
-                    addTimber();
-                    break;
-                case 3:
-                    addCylinder();
-                    break;
-                case 4:
-                    addWaste();
-                    break;
-                case 5:
-                    calcWeight();
-                    break;
-                case 6:
-                    save();
-                    break;
-                case 7:
-                    load();
-                    break;
-                case 8:
-                    toTxt();
-                case 9:
+                case 1 -> addWood();
+                case 2 -> addTimber();
+                case 3 -> addCylinder();
+                case 4 -> addWaste();
+                case 5 -> calcWeight();
+                case 6 -> save();
+                case 7 -> load();
+                case 8 -> toTxt();
+                case 9 -> {
                     System.out.println(wd);
                     System.out.println(ps);
                     calcWeight();
+                    try {
+                        bw.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     return;
-                default:
-                    throw new IllegalStateException("Unexpected value: " + inputNum);
+                }
+                default -> throw new IllegalStateException("Unexpected value: " + inputNum);
             }
         }
     }
 
+    private void name() {
+        System.out.println("Введіть ваше ім'я");
+        String s = in.nextLine();
+        try {
+            bw.write((new Date()) +" "+ s + " logged in");
+            bw.newLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private void toTxt() {
-        JFileChooser dialog = new JFileChooser();
-        dialog.showOpenDialog(null);
-        File f = dialog.getSelectedFile();
+        File f = new File("Звіт.TXT");
         if (f != null) {
-            System.out.println(f.getName());
             System.out.println(f.getAbsolutePath());
         }
         try {
@@ -147,10 +163,12 @@ public class TestByConsole {
         System.out.println("Введіть вагу залишків виробництва");
         weight = in.nextFloat();
         try {
-            ps.add(new Waste(weight));
+            Waste w = new Waste(weight);
+            ps.add(w);
+            System.out.println("Додано до списка");
+            writeString(w.toString());
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("Додано до списка");
         }
     }
 
@@ -167,10 +185,12 @@ public class TestByConsole {
             diameter = Float.parseFloat(inf[2]);
 
             try {
-                ps.add(new Cylinder(wd.get(id), length, diameter));
+                Cylinder c = new Cylinder(wd.get(id), length, diameter);
+                ps.add(c);
+                System.out.println("Додано до списка");
+                writeString(c.toString());
             } catch (Exception e) {
                 e.printStackTrace();
-                System.out.println("Додано до списка");
             }
         }
     }
@@ -189,8 +209,10 @@ public class TestByConsole {
             width = Float.parseFloat(inf[3]);
 
             try {
-                ps.add(new Timber(wd.get(id), length, height, width));
+                Timber t = new Timber(wd.get(id), length, height, width);
+                ps.add(t);
                 System.out.println("Додано до списка");
+                writeString(t.toString());
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -206,6 +228,7 @@ public class TestByConsole {
         float density = Float.parseFloat(inputInf[2]);
         Wood w = new Wood(id, kindOfWood, density);
         if (wd.add(w)) {
+            writeString(w.toString());
             System.out.println("Додано до списка");
         } else {
             System.out.println(w + " id вже існує\n");
@@ -213,7 +236,12 @@ public class TestByConsole {
     }
 
     public static void main(String[] args) {
-        TestByConsole app = new TestByConsole();
+        TestByConsole app = null;
+        try {
+            app = new TestByConsole();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         app.startApp();
     }
 }

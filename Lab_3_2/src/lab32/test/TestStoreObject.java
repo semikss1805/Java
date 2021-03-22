@@ -8,7 +8,7 @@ import java.io.*;
 public class TestStoreObject {
     public static void main(String[] args) {
         WoodDirectory wd = new WoodDirectory();
-        wd.add(new Wood(4, "oak", 1f));
+        wd.add(new Wood(1, "Дуб", 1f));
         File f = new File("wd.object");
         try {
             FileOutputStream fos = new FileOutputStream(f);
