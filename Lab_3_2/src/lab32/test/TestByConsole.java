@@ -159,9 +159,10 @@ public class TestByConsole {
     }
 
     private void addWaste() {
-        float weight;
+        double weight;
         System.out.println("Введіть вагу залишків виробництва");
-        weight = in.nextFloat();
+        String s = in.nextLine();//?????????????????
+        weight = Double.parseDouble(s);
         try {
             Waste w = new Waste(weight);
             ps.add(w);

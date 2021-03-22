@@ -194,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616352737479</updated>
       <workItem from="1616352738868" duration="11105000" />
-      <workItem from="1616368009873" duration="6664000" />
+      <workItem from="1616368009873" duration="7497000" />
     </task>
     <servers />
   </component>
@@ -223,11 +223,6 @@
           <properties class="java.util.InputMismatchException" package="java.util" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/lab32/test/TestByConsole.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

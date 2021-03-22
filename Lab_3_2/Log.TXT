@@ -1,0 +1,2 @@
+Mon Mar 22 03:17:02 EET 2021 sda logged in
+Mon Mar 22 03:17:05 EET 2021 Waste{weight=0.4}

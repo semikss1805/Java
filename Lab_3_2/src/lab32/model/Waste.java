@@ -1,9 +1,9 @@
 package lab32.model;
 
 public class Waste implements IWeight {
-    private float weight;
+    private double weight;
 
-    public Waste(float weight) throws Exception {
+    public Waste(double weight) throws Exception {
         if (weight < 0.1 || weight > 8) {
             throw new Exception("weight=" + weight + " is not correct!\n" + "Must be from 0.020 to 0.100");
         }
@@ -17,7 +17,7 @@ public class Waste implements IWeight {
                 '}';
     }
 
-    public float weight() {
+    public double weight() {
         return weight;
     }
 }

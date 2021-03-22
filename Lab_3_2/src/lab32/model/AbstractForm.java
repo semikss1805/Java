@@ -11,7 +11,7 @@ public abstract class AbstractForm implements IWeight {
         return wood;
     }
 
-    public float weight() {
+    public double weight() {
         return wood.getDensity() * volume();
     }
 
