@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12c333ff-9818-4354-9be4-8c36deb4873b" name="Default Changelist" comment="" />
+    <list default="true" id="706a5694-48a0-43ec-bc96-09fa8fa40d64" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1q4xbkNxjProxjX0Zzbmda6RhQu" />
+  <component name="ProjectId" id="1rMCU3QDDEtRp5HaEgetHk9uSdX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -87,67 +80,24 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
-  <component name="RunManager" selected="Application.TestByConsole">
+  <component name="RunManager" selected="Application.TestApp">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lab5.Main" />
+      <module name="Lab_5" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab32.test.TestApp" />
-      <module name="Lab_3_2" />
+      <option name="MAIN_CLASS_NAME" value="Lab5.test.TestApp" />
+      <module name="Lab_5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lab32.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestByConsole" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab32.test.TestByConsole" />
-      <module name="Lab_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab32.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab32.test.TestFile" />
-      <module name="Lab_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab32.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRestoreObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab32.test.TestRestoreObject" />
-      <module name="Lab_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab32.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestStoreObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab32.test.TestStoreObject" />
-      <module name="Lab_3_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lab32.test.*" />
+          <option name="PATTERN" value="Lab5.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,42 +106,32 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestFile" />
-      <item itemvalue="Application.TestStoreObject" />
-      <item itemvalue="Application.TestRestoreObject" />
-      <item itemvalue="Application.TestByConsole" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.TestApp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestByConsole" />
         <item itemvalue="Application.TestApp" />
-        <item itemvalue="Application.TestStoreObject" />
-        <item itemvalue="Application.TestFile" />
-        <item itemvalue="Application.TestRestoreObject" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="12c333ff-9818-4354-9be4-8c36deb4873b" name="Default Changelist" comment="" />
-      <created>1616352737479</created>
+      <changelist id="706a5694-48a0-43ec-bc96-09fa8fa40d64" name="Default Changelist" comment="" />
+      <created>1618776583448</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1616352737479</updated>
-      <workItem from="1616352738868" duration="11105000" />
-      <workItem from="1616368009873" duration="7497000" />
-      <workItem from="1616437638076" duration="2000" />
-      <workItem from="1617559787464" duration="68000" />
+      <updated>1618776583448</updated>
+      <workItem from="1618776584789" duration="6291000" />
+      <workItem from="1618782965263" duration="412000" />
+      <workItem from="1618812062447" duration="312000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.object" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -206,13 +146,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.util.InputMismatchException" package="java.util" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="ps" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
